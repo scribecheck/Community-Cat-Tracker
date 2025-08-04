@@ -1,0 +1,205 @@
+Neighborhood Community Cats (website)
+GOAL: Create a central website where anyone in the area can go to check on the status of local community cats and find resources (mostly links and information on TNR).
+
+MAIN WEBSITE FUNCTION: Keep track of local community cats in real time (or as close to real time as possible) via local people's updates.
+
+NOT FUNCTIONS OF WEBSITE:
+* posting cats for adoption/fostering
+* finding cats to adopt
+* message board
+
+
+Info to include:
+**Login / registration / password? (for security of cats and users)
+	- Sendabori residents only?
+**EN/JP versions
+
+**light/dark versions
+
+* cat profiles
+** Filters, search option?
+- name (nicknames)
+- approx. age
+- sex
+- image
+- TNR (yes/no)
+- health details (spay/neuter, FIV/felv status, vaccinations, past/current health issues)
+- personality (talkative, shy, aggressive)
+- life status (missing, deceased, pregnant, adopted, living outdoors)
+- "spotted" tracker that people can click any time they've seen the cat at their house or in the neighborhood(?) for up-to-date feedback (not location-based?)
+	** This is the main purpose of the website, to make it easier to keep track of the cats and know how they're doing
+- feeders (number of people who are regularly putting out food and see this cat come to eat)
+	** This will be a counter button that people can click saying "I am a feeder" and will not register addresses, names, or personal information of individuals, only the number of (registered?) users who have clicked the button.
+
+* missing -> profile status, not a page
+- profiles of cats who are "missing" (haven't been seen by any neighbors or regular feeders in a week or more)
+	** Automatically updated if a cat's "tracker" hasn't been clicked after a certain period?
+
+* news
+- website updates
+- local events (cat-related)
+- major announcements (emergencies, disaster)
+- "missing cat" updates/news
+
+* FAQ
+- about the website
+- about me (how to contact, background, etc.)
+- terms (feral cat, stray cat, TNR, community cat, feeder, Sakura neko)
+- about TNR (Matsudo City website link)
+- about personal information (security)
+- how to get info on the site updated (aka who to contact and how)
+
+* resources
+- Matsudo City community cats (link)
+- recommended animal hospitals
+- online/in-person places to find and meet/contact volunteers
+
+================ THEMES ================
+--main-color: #0052b2;
+--second-color: #328016 ; 
+--link-color: #ffe500;
+--link-visited: #e10000;
+--link-active: ;
+--link-hover: #328016;
+--background: #f7f7f7;
+--container-bg: #fff;
+--text-light: #f3f3f3;
+--text-regular: #000000;
+
+--font-h1: 3rem;
+--font-h2: 2.5rem;
+--font-h3: 2rem;
+--font-h4: 1.75rem;
+--font-reg: 1.5rem;
+--font-small: 1.25rem ;
+--font-bold: 700;
+
+/* DARK THEME COLORS */
+--main-color: ;
+--second-color:  ; 
+--link-color: ;
+--link-visited: ;
+--link-active: ;
+--link-hover: ;
+--background: ;
+--container-bg: ;
+--text-white: ;
+--text-regular: ;
+
+================ NAV ================
+.nav_logo
+
+
+.nav_menu
+.nav_item
+.nav_link
+
+News -- Cats -- FAQ -- Resources
+
+.nav_lang
+.nav_jp / .nav_en
+日本語 / English
+
+.nav_theme
+.theme_dark 
+Dark / Light
+
+================ NEWS ================
+#news
+
+.news_swiper .news_swiper
+.news
+News 1
+News 2
+News 3
+
+
+================ CATS ================
+Note: Separate page (not scroll down)
+#cats
+
+.cats_header
+Cat Tracker
+
+.tracker_description
+You can browse profiles of community cats in the neighborhood!
+All the information and images are shared by neighbors in Sendabori, Matsudo City.
+If you see a cat in the neighborhood, go to the cat's profile and click the "I saw you!" button. If many people click the cat's profile, it will be marked "Safe."
+If nobody clicks the cat's profile for a long time, it will be marked "Missing."
+If you are worried about a cat, please check the cat's profile to find out its status!
+
+The "I saw you button" does not save personal information such as your name, address, or location. It only counts how many times it is clicked per day.
+
+
+================ FAQ ================
+#faq
+
+
+
+================ RESOURCES ================
+
+
+================ FOOTER ================
+Contact
+(name & email?)
+
+
+
+
+<!-- ================== NEWS SWIPER ================== -->
+ <section class="news container" id="news">
+        <div class="news_swiper swiper" id="#news">
+            <div class="news">
+
+                <article class="site_news swiper">
+                <img src="" alt="" class="news_img">
+                <div class="news_info">
+                    <h1>News 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                </article>
+
+                <article class="site_news swiper">
+                    <img src="" alt="" class="news_img">
+                <div class="news_info">
+                    <h1>News 2</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                </article>
+
+                <article class="site_news swiper">
+                    <img src="" alt="" class="news_img">
+                <div class="news_info">
+                    <h1>News 3</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+</section>
+    <!-- ================== ABOUT CAT TRACKER ================== -->
+     <section class="cats section" id="cats"></section>
+    <div>
+        <div class="container" id="cats">
+            <h2 class="header">About the Cat Tracker</h2>
+            <p>You can browse <a href="#profiles">profiles</a> of community cats in the neighborhood!<br/>
+All the information and images are shared by neighbors in Sendabori, <a href="https://www.city.matsudo.chiba.jp/" target="_blank">Matsudo City</a>.<br/>
+
+If you see a cat in the neighborhood, go to the cat's profile and click the "I saw you!" button. <br/>
+
+The "I saw you today!" button does not save personal information such as your name, address, or location. It only counts how many times it is clicked per day.</p>
+        </div>
+    </div>
+
+    <!-- ================== CAT PROFILES ================== -->
+
+
+    <!-- ================== FAQ ================== -->
+
+
+    <!-- ================== RESOURCES ================== -->
+
+
+    <!-- ================== FOOTER ================== -->
