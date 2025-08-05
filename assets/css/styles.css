@@ -60,14 +60,24 @@ a {
 }
 
 /*=============== HEADER ===============*/
-
 .header {
+    width: 100%;
+    height: 150px;
     background-color: var(--main-color);
-    height: 160px;
-    display: grid;
 }
 
-/*==== Nav Actions ====*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    justify-content: space-between;
+}
+
+/*==== Nav Actions & Logo ====*/
 .nav_actions {
     position: fixed;
     top: 2rem;
@@ -75,38 +85,35 @@ a {
 }
 
 .nav_actions .action {
-    display: inline-block;
+    padding: 0 8px;
 }
 
-.nav_actions span {
+.nav_actions .action span {
     color: var(--text-light);
     font-size: var(--font-reg);
 }
 
-.nav_actions i {
+.nav_actions .action i {
     color: var(--second-color);
-    font-size: var(--font-h4);
+    font-size: var(--font-h3);
 }
+
+.nav_logo {
+    position: fixed;
+    top: 3rem;
+    left: 4rem;
+    color: var(--text-light);
+    font-size: var(--font-h3);
+}
+
 
 /*==== Main Menu ====*/
 .navbar {
+    display: flex;
+}
+
+.nav_item {
     display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
 }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    display: inline-block;
-
-}
-
-.navbar li span,
-.navbar .nav_logo {
-    color: var(--text-light);
-}
-
