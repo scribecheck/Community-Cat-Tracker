@@ -144,10 +144,8 @@ Contact
 (name & email?)
 
 
-
-
 <!-- ================== NEWS SWIPER ================== -->
- <section class="news container" id="news">
+ <section class="news section" id="news">
         <div class="news_swiper swiper" id="#news">
             <div class="news">
 
@@ -183,7 +181,7 @@ Contact
      <section class="cats section" id="cats"></section>
     <div>
         <div class="container" id="cats">
-            <h2 class="header">About the Cat Tracker</h2>
+            <h2 class="">About the Cat Tracker</h2>
             <p>You can browse <a href="#profiles">profiles</a> of community cats in the neighborhood!<br/>
 All the information and images are shared by neighbors in Sendabori, <a href="https://www.city.matsudo.chiba.jp/" target="_blank">Matsudo City</a>.<br/>
 
@@ -203,3 +201,9 @@ The "I saw you today!" button does not save personal information such as your na
 
 
     <!-- ================== FOOTER ================== -->
+
+    
+    </nav>
+</header>
+<!-- ================== MAIN ================== -->
+ <main class="main">
