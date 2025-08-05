@@ -87,39 +87,22 @@ Info to include:
 --text-regular: ;
 
 ================ NAV ================
-.nav_logo
-
-
-.nav_menu
-.nav_item
-.nav_link
-
 News -- Cats -- FAQ -- Resources
 
-.nav_lang
-.nav_jp / .nav_en
+
 日本語 / English
 
-.nav_theme
-.theme_dark 
+
 Dark / Light
 
 ================ NEWS ================
 #news
 
-.news_swiper .news_swiper
-.news
-News 1
-News 2
-News 3
-
 
 ================ CATS ================
-Note: Separate page (not scroll down)
+
 #cats
 
-.cats_header
-Cat Tracker
 
 .tracker_description
 You can browse profiles of community cats in the neighborhood!
