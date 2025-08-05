@@ -48,8 +48,17 @@ body{
 
 a {
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
+a:hover {
+    color: var(--link-hover);
+}
+
+img {
+    width: auto;
+    height: 100px;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 
@@ -114,7 +123,7 @@ a {
 .nav_actions {
     display: flex;
     transition: 0.3s ease;
-    justify-content: right;
+    justify-content: center;
 }
 
 .nav_actions .actions {
