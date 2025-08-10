@@ -5,7 +5,7 @@
     /*========== Colors ==========*/
 --main-color: #0052b2;
 --second-color: #5ee5fd ; 
---third-color: #34c700;
+--third-color: #00842a;
 --link-color: #0052b2;
 --link-visited: #e10000;
 --link-active: ;
@@ -48,8 +48,8 @@ body{
 }
 
 a {
-    text-decoration: none;
-    transition: 0.3s ease;
+    text-decoration: 1px solid underline;
+    transition: 0.2s ease;
 }
 
 a:hover {
@@ -57,10 +57,39 @@ a:hover {
 }
 
 img {
-    width: auto;
-    height: 200px;
+    width: 150px;
+    height: auto;
 }
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    background-color: hsla(212, 100%, 35%, 0.268);
+    border-radius: 10px;
+    width: 80vw;
+    margin: auto;
+    padding: 30px;
+}
+
+.button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 15px;
+  color: var(--text-light);
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: var(--font-h4);
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+    transition: 0.3s ease;
+    background-color: #0864cd;
+    box-shadow: 0px 2px 10px #a5a5a5;
+}
 
 
 /*=============== HEADER ===============*/
@@ -81,7 +110,7 @@ img {
 
 
 .navbar .nav_logo h1 {
-    font-size: var(--font-h1);
+    font-size: var(--font-h3);
 }
 
 .navbar .nav_logo .logo_responsive {
@@ -90,7 +119,7 @@ img {
 
 .navbar ul {
     list-style-type: none;
-    gap: 50px;
+    gap: 40px;
     display: flex;
 }
 
@@ -100,7 +129,7 @@ img {
 
 .navbar ul li a {
     text-decoration: none;
-    font-size: var(--font-h2);
+    font-size: var(--font-h3);
     color: var(--text-light);
     transition: 0.3s ease;
 }
@@ -160,18 +189,20 @@ img {
 
 /*==== News Swiper ====*/
 .news {
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: var(--container-bg);
 }
 
-.swiper_container {
-    background-color: hsla(212, 100%, 35%, 0.1);
+.swiper {
+    background-color: hsla(212, 100%, 35%, 0.268);
     border-radius: 20px;
-    width: 70vw;
     height: 400px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 10px 50px;
     display: flex;
     align-content: center;
+    width: 60%;
 }
 
 
@@ -181,6 +212,7 @@ img {
     align-content: center;
     gap: 60px;
     width: 100%;
+    overflow: hidden;
 }
 
 .news_img {
@@ -198,6 +230,7 @@ img {
     align-items: center;
     justify-content: center;
     margin: auto;
+    gap: 20px;
 }
 
 
@@ -221,6 +254,70 @@ img {
 .swiper_dots .dots i:hover {
     color: #7af050;
     transition: 0.3s;
+}
+
+
+/*=============== CATS ===============*/
+.cats {
+    border-radius: 20px;
+    max-width: 90vw;
+    margin: 40px auto;
+    align-content: center;
+}
+
+.section_title {
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    font-size: var(--font-h1);
+}
+
+.section_description {
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    width: 70%;
+}
+
+/*==== Cat Profiles ====*/
+.profiles_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.profile_box {
+    width: 300px;
+    height: 350px;
+    background-color: var(--container-bg);
+    outline: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.counter-tag {
+    position: absolute;
+    transform: translate(10px, -15px);
+    width: 40px;
+    height: 60px;
+    background-color: var(--third-color);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 3px 5px #a5a5a5;
+}
+.counter-tag p {
+    text-align: center;
+    font-size: var(--font-small);
+    color: var(--text-light)
+}
+
+.profile_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
 }
 
 /*=============== BREAKPOINTS ===============*/
