@@ -63,25 +63,29 @@ img {
 
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
 .container {
     background-color: hsla(212, 100%, 35%, 0.268);
-    border-radius: 10px;
-    width: 80vw;
-    margin: auto;
-    padding: 30px;
+    border-radius: 20px;
+    width: 60vw;
+    margin: 40px auto;
+    padding: 40px;
 }
 
 .button {
   background-color: var(--main-color);
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   color: var(--text-light);
-  padding: 10px 32px;
+  padding: 8px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: var(--font-h4);
-  margin: 4px 2px;
+  margin: 5px 2px;
   cursor: pointer;
 }
 
@@ -91,12 +95,34 @@ img {
     box-shadow: 0px 2px 10px #a5a5a5;
 }
 
+.section_title {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: var(--font-h1);
+    padding-bottom: 1rem;
+}
+
+.section_description {
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    font-size: var(--font-reg);
+}
+
 
 /*=============== HEADER ===============*/
 .header {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-fixed);
     background-color: var(--main-color);
     width: 100%;
     height: 12vh;
+    transition: box-shadow .4s, background-color .4s;
+}
+
+.shadow-header {
+  box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.368);
 }
 /*==== Nav Main Menu ====*/
 .navbar {
@@ -189,28 +215,16 @@ img {
 
 /*==== News Swiper ====*/
 .news {
-    padding-top: 60px;
-    padding-bottom: 40px;
     background-color: var(--container-bg);
 }
 
 .swiper {
-    background-color: hsla(212, 100%, 35%, 0.268);
-    border-radius: 20px;
-    height: 400px;
-    margin: 40px auto;
-    padding: 10px 50px;
-    display: flex;
-    align-content: center;
-    width: 60%;
+    max-width: 900px;
 }
-
 
 .news_cell {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 60px;
+    gap: 50px;
     width: 100%;
     overflow: hidden;
 }
@@ -222,13 +236,10 @@ img {
 }
 
 .news_info {
-    height: 100%;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: auto;
     gap: 20px;
 }
@@ -254,41 +265,26 @@ img {
 .swiper_dots .dots i:hover {
     color: #7af050;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 
 /*=============== CATS ===============*/
-.cats {
-    border-radius: 20px;
-    max-width: 90vw;
-    margin: 40px auto;
-    align-content: center;
-}
-
-.section_title {
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
-    font-size: var(--font-h1);
-}
-
-.section_description {
-    text-align: center;
-    margin: auto;
-    padding: 2rem;
-    width: 70%;
-}
 
 /*==== Cat Profiles ====*/
+.profiles {
+    padding-top: 0;
+}
+
 .profiles_container {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 2rem;
 }
 
 .profile_box {
-    width: 300px;
+    width: 250px;
     height: 350px;
     background-color: var(--container-bg);
     outline: 2px solid black;
@@ -316,9 +312,32 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
+.cat_name {
+    font-size: var(--font-h4);
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.cat_nickname {
+    font-size: var(--font-small);
+    font-style: italic;
+}
+
+.cat_img {
+    margin: 1rem 0;
+}
+
+/*=============== FAQ ===============*/
+
+
+/*=============== RESOURCES ===============*/
+
+
+/*=============== FOOTER ===============*/
+
 
 /*=============== BREAKPOINTS ===============*/
 
