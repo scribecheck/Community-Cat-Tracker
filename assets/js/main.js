@@ -1,37 +1,40 @@
-
-/*=============== DARK LIGHT THEME =============== 
-const toggleButton = document.getElementById('theme-toggle');
-const body = document.body;
-
-body.classList.add('light-mode');
-
-toggleButton.addEventListener('click', () => {
-    if (body.classList.contains('light-mode')) {
-        body.classList.replace('light-mode', 'dark-mode');
-        toggleButton.textContent = 'Light';
-    } else {
-        body.classList.replace('dark-mode', 'light-mode');
-        toggleButton.textContent = 'Dark';
-    }
-});
-
-*/
-
-
-let toggleoff = document.querySelector("toggleoff");
-let toggleon = document.querySelector("toggleon");
-let herolarge = document.querySelector("#htx");
-let herosub = document.querySelector("#htxtwo");
-
+// Dark Mode Toggle
+let toggleoff = document.querySelector("#toggleoff");
+let toggleon = document.querySelector("#toggleon");
 let mode = localStorage.getItem("mode");
 
 function updateMode(mode) {
-    if (mode == 'darkmode') {
-        localStorage.setItem('mode', 'darkmode');
-        toggleoff.style.display = 'none';
-        toggleon.style.display = 'block';
-        document.body.classList.add("darkmode")
-    }
+  if (mode === 'darkmode') {
+    localStorage.setItem('mode', 'darkmode');
+    toggleoff.style.display = 'none';
+    toggleon.style.display = 'block';
+    document.body.classList.add("darkmode");
+    document.body.classList.remove('lightmode');
+    console.log('dark mode');
+  } else {
+    localStorage.setItem('mode', 'lightmode');
+    toggleoff.style.display = 'block';
+    toggleon.style.display = 'none';
+    document.body.classList.remove("darkmode");
+    document.body.classList.add('lightmode');
+    console.log('light mode');
+  }
+}
+
+toggleon.addEventListener('click', function () {
+  updateMode('lightmode');
+});
+
+toggleoff.addEventListener('click', function () {
+  updateMode('darkmode');
+});
+
+if (mode === 'darkmode') {
+    updateMode('darkmode');
+} else if (mode === 'lightmode'){
+    updateMode('lightmode');
+} else {
+    updateMode('lightmode');
 }
 
 /*=============== ADD SHADOW HEADER ===============*/

@@ -43,11 +43,18 @@ Info to include:
 
 * FAQ
 - about the website
+"What's the purpose of this website?"
 - about me (how to contact, background, etc.)
+"Who runs the website?"
 - terms (feral cat, stray cat, TNR, community cat, feeder, Sakura neko)
+
 - about TNR (Matsudo City website link)
+"Where can I learn more about community cats?"
 - about personal information (security)
+"Does the website save my personal information?"
 - how to get info on the site updated (aka who to contact and how)
+"What cats can be added to the website?"
+"
 
 * resources
 - Matsudo City community cats (link)
