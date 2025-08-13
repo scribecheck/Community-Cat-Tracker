@@ -46,3 +46,35 @@ const shadowHeader = () =>{
                        : header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll', shadowHeader)
+
+
+/*=============== SWIPER ===============*/
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 'auto',
+  centeredSlides: 'auto',
+  spaceBetween: 16,
+  grabCursor: true,
+
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoplay: {
+    delay: 3550,
+    disableOnInteraction: true,
+  },
+
+  breakpoints: {
+    1220: {
+      spaceBetween: 32,
+    }
+  }
+
+});
+

@@ -42,6 +42,7 @@
     --link-hover: #72baf5;
     --background: #f7f7f7;
     --container-bg: #fff;
+    --soft-border: #cccccc;
 
     --section-color: #b0d5ff;
 
@@ -53,14 +54,15 @@
     --main-color: #0052b2;
     --second-color: #f7f252 ;
     --third-color: #00842a;
-    --link-color: #f7f252;
+    --link-color: #72baf5;
     --link-visited: #e10000;
     --link-active: ;
-    --link-hover: #72baf5;
+    --link-hover: #f7f252;
     --background: #131313;
     --container-bg: #000000;
+    --soft-border: #464646;
 
-    --section-color: #0071ce;
+    --section-color: #6a00ce;
     
     --text-light: #f3f3f3;
     --text-regular: #f3f3f3;
@@ -112,13 +114,6 @@ ul {
 .section {
     padding-top: 90px;
     padding-bottom: 100px;
-}
-
-.container {
-    border-radius: 20px;
-    width: 70vw;
-    margin: 40px auto;
-    padding: 40px;
 }
 
 .section_title {
@@ -251,15 +246,20 @@ ul {
 }
 
 .swiper {
-    max-width: 900px;
-    background-color: var(--section-color);
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
 }
 
-.news_cell {
+
+.swiper-slide {
     display: flex;
-    gap: 50px;
-    width: 100%;
-    overflow: hidden;
+    gap: 30px;
+    background-color: var(--section-color);
+    padding: 2rem;
+    height: 500px;
+    border-radius: 20px;
+    width: 400px;
 }
 
 .news_img {
@@ -281,30 +281,24 @@ ul {
     font-size: var(--font-h1);
 }
 
-
-.swiper_dots {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
 }
 
-.dots {
-    color: var(--third-color);
-    display: flex;
-    justify-content: space-evenly;
+.swiper-btn {
+    color: var(--link-hover);
+    font-size: var(--font-h1);
+    margin: auto;
+    padding: 2px;
+    border: 1px solid var(--soft-border);
+    background-color: hsla(0, 0%, 100%, 0.362);
 }
 
-.swiper_dots .dots i {
-    margin: 0 20px;
-    font-size: var(--font-h4);
+.swiper-btn:hover {
+    color: var(--main-color);
+    transition: 0.3s ease;
 }
-
-.swiper_dots .dots i:hover {
-    color: #7af050;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 
 /*=============== CAT PROFILES ===============*/
 
@@ -313,14 +307,15 @@ ul {
     flex-flow: row wrap;
     justify-content: center;
     gap: 3rem;
-    margin-top: 7rem;
+    margin: 7rem auto auto auto;
+    max-width: 850px;
 }
 
 .profile_box {
     width: 250px;
     height: 350px;
     background-color: var(--container-bg);
-    outline: 2px solid rgb(204, 204, 204);
+    outline: 2px solid var(--soft-border);
     display: flex;
     flex-direction: column;
 }
@@ -385,6 +380,7 @@ ul {
 .faq_q:hover {
     color: var(--link-hover);
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .faq div p {

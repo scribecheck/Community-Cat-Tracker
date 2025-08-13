@@ -16,7 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
+    <!-- ================== SWIPER CSS ================== -->
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+     
+     <!-- ================== SWIPER JS ================== -->
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 </head>
 <!-- ================== HEADER ================== -->
 <body>
@@ -61,28 +67,50 @@
     <!-- ================== NEWS ================== -->
      <section class="news section" id="news">
 
-        <div class="swiper container">
-
-            <article class="news_cell">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
            <img src="assets/img/cats/adopted.JPEG" alt="" class="news_img">
 
            <div class="news_info">
             <h2 class="news_title">News 1</h2>
         <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
            </div>
-        
-        </article>
-            
-        </div>
-        
-        
-        <div class="swiper_dots">
-            <div class="dots">
-            <i class="ri-circle-fill"></i>
-            <i class="ri-circle-fill"></i>
-            <i class="ri-circle-fill"></i>
-            </div>
-        </div>
+    </div>
+
+    <div class="swiper-slide">
+           <img src="assets/img/cats/adopted.JPEG" alt="" class="news_img">
+
+           <div class="news_info">
+            <h2 class="news_title">News 2</h2>
+        <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+           </div>
+    </div>
+
+    <div class="swiper-slide">
+           <img src="assets/img/cats/adopted.JPEG" alt="" class="news_img">
+
+           <div class="news_info">
+            <h2 class="news_title">News 3</h2>
+        <p class="news_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+           </div>
+    </div>
+
+  </div>
+
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev">
+    <i class="ri-arrow-left-s-line swiper-btn"></i>
+  </div>
+  <div class="swiper-button-next">
+    <i class="ri-arrow-right-s-line swiper-btn"></i>
+  </div>
+</div>
+
 
      </section>
 
@@ -231,7 +259,7 @@
     <h4 class="section_title">FAQ</h4>
        <div class="section_text">
         <details>
-            <summary class="faq_q" id="faq1">Who runs the website?</summary>
+            <summary class="faq_q" id="faq1"><span>Who runs the website?</span></summary>
             <div>
                 <p>My name is Colin. I'm an American living in Matsudo City, and I have three pet cats whom I adopted or rescued. 
                 </br>
@@ -242,7 +270,7 @@
         </details>
 
         <details>
-            <summary class="faq_q" id="faq2">Who can use the website?</summary>
+            <summary class="faq_q" id="faq2"><span>Who can use the website?</span></summary>
             <div>
                 <p>
                   Anyone can visit the website. However, please only click the "I saw you today!" buttons if you have actually seen the cat in Sendabori in Matsudo City.
@@ -251,7 +279,7 @@
         </details>
 
         <details>
-            <summary class="faq_q" id="faq3">What is a "community cat"?</summary>
+            <summary class="faq_q" id="faq3"><span>What is a "community cat"?</span></summary>
             <div>
                 <p>A "community cat" is a cat that lives outside and is taken care of by the community. You can learn more about community cats on Matsudo City's website.
                 </p>
@@ -259,7 +287,7 @@
         </details>
 
         <details>
-            <summary class="faq_q" id="faq4">Does the website save my personal information?</summary>
+            <summary class="faq_q" id="faq4"><span>Does the website save my personal information?</span></summary>
             <div>
                 <p>No, the website doesn't save anyone's personal information. 
                 </br>
@@ -271,7 +299,7 @@
         </details>
 
         <details>
-            <summary class="faq_q" id="faq5">How can I add a cat profile to the website?</summary>
+            <summary class="faq_q" id="faq5"><span>How can I add a cat profile to the website?</span></summary>
             <div>
                 <p>Thanks for helping out! 
                 </br>
@@ -282,7 +310,7 @@
         </details>
 
          <details>
-            <summary class="faq_q" id="faq6">I found a sick/injured cat outside, what should I do?</summary>
+            <summary class="faq_q" id="faq6"><span>I found a sick/injured cat outside, what should I do?</span></summary>
             <div>
                 <p>Visit the <a href="#resources">Resources</a> section for links to local and national volunteer organizations, online support gropus for cat rescue, and NPOs.
                 </br>
@@ -372,7 +400,9 @@
         </div>
     </div>
 </footer>
-
+ <!-- ================== MAIN JS ================== -->
 <script src="assets/js/main.js"></script>
+
+
 </body>
 </html>
