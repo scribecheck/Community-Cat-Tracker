@@ -3,12 +3,12 @@
 :root {
 
     /*========== Colors ==========*/
---main-color: #0052b2;
---second-color: #f7f252 ; 
---third-color: #00842a;
+--main-color: #022b3a;
+--button-color: #f7f252 ; 
+--item-color: #00842a;
 --link-color: #0052b2;
 --link-visited: #e10000;
---link-active: ;
+--link-active: #00842a;
 --link-hover: #72baf5;
 --background: #f7f7f7;
 --container-bg: #fff;
@@ -33,39 +33,45 @@
 
 /*========== Dark Mode ==========*/
 .lightmode {
-    --main-color: #0052b2;
-    --second-color: #f7f252 ;
-    --third-color: #00842a;
-    --link-color: #0052b2;
-    --link-visited: #e10000;
-    --link-active: ;
-    --link-hover: #72baf5;
+    --main-color: #006ba6;
+
+    --button-color: #00a5cf;
+    --item-color: #023e7d;
+
+    --link-color: #ffbc42;
+    --link-visited: #7d8597;
+    --link-active: #000;
+    --link-hover: #ffbc42;
+
     --background: #f7f7f7;
     --container-bg: #fff;
     --soft-border: #cccccc;
 
-    --section-color: #b0d5ff;
+    --section-color: #a9d6e5;
 
     --text-light: #f3f3f3;
     --text-regular: #000;
+
+    transition: .2s ease;
 }
 
 .darkmode {
-    --main-color: #0052b2;
-    --second-color: #f7f252 ;
-    --third-color: #00842a;
+    --main-color: #031d44;
+    --button-color: #f7f252 ;
+    --item-color: #00842a;
     --link-color: #72baf5;
     --link-visited: #e10000;
-    --link-active: ;
+    --link-active: #000;
     --link-hover: #f7f252;
     --background: #131313;
     --container-bg: #000000;
     --soft-border: #464646;
 
-    --section-color: #6a00ce;
+    --section-color: #1c6b93;
     
     --text-light: #f3f3f3;
     --text-regular: #f3f3f3;
+    transition: .1s ease;
         }
 
 
@@ -127,7 +133,7 @@ ul {
 }
 
 .button {
-  background-color: var(--main-color);
+  background-color: var(--button-color);
   border: none;
   border-radius: 10px;
   color: var(--text-light);
@@ -141,7 +147,7 @@ ul {
 
 .button:hover {
     transition: 0.3s ease;
-    background-color: #0864cd;
+    background-color: var(--link-hover);
     box-shadow: 0px 2px 10px #6b6b6b;
 }
 
@@ -223,7 +229,7 @@ ul {
 }
 
 .nav_actions ul li i {
-    color: var(--second-color);
+    color: var(--button-color);
 }
 
 .nav_actions ul li a::before {
@@ -287,7 +293,7 @@ ul {
 }
 
 .swiper-btn {
-    color: var(--link-hover);
+    color: var(--button-color);
     font-size: var(--font-h1);
     margin: auto;
     padding: 2px;
@@ -296,7 +302,7 @@ ul {
 }
 
 .swiper-btn:hover {
-    color: var(--main-color);
+    color: var(--link-hover);
     transition: 0.3s ease;
 }
 
@@ -325,7 +331,7 @@ ul {
     transform: translate(10px, -15px);
     width: 40px;
     height: 60px;
-    background-color: var(--third-color);
+    background-color: var(--item-color);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     box-shadow: 0px 3px 5px #414141;
