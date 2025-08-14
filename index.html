@@ -51,9 +51,10 @@
                 <i class="ri-global-line"></i>
                 <a href="#">日本語</a></li>
         <!-- Theme Change -->   
-            <li class="action">
+            <li class="action" id="theme-btn">
                 <i class="ri-moon-line fa-toggle-off" id="toggleoff"></i>
                 <i class="ri-sun-line fa-toggle-on" id="toggleon"></i>
+            </li>
         <!-- Site Map -->
             <li class="action">
                 <i class="ri-mind-map"></i>
@@ -116,9 +117,10 @@
 
 
 <!-- ================== CAT PROFILES ================== -->
- <section class="profiles section" id="cats">
+ <section class="cats section" id="cats">
 
 <h3 class="section_title" id="profiles">Cat Profiles</h3>
+
 <div class="profiles_container">
 
     <div class="profile_box">
@@ -130,7 +132,7 @@
               <p class="cat_name">Mojo</p>
         <p class="cat_nickname">Shiro-kun</p>
         <p class="cat_details">5yrs (male) TNR (2025)</p>
-        <img src="assets/img/cats/profile-mojo.JPEG" alt="" class="cat_img">
+        <img src="assets/img/cats/profile-mojo2.JPG" alt="" class="cat_img">
         <button class="tracker-btn button">I saw you today!</button> 
         </div>
         
@@ -249,6 +251,48 @@
         </div>
     </div>
 
+    <div class="profile_box">
+        <div class="counter-tag">
+            <p>Seen</p>
+            <p>5</p>
+        </div>
+        <div class="profile_content">
+          <p class="cat_name">Name</p>
+        <p class="cat_nickname">Nickname</p>
+        <p class="cat_details">#yrs (m/f) TNR (yr)</p>
+        <img src="assets/img/site/no-img.png" alt="" class="cat_img">
+        <button class="tracker-btn button">I saw you today!</button>  
+        </div>
+    </div>
+
+    <div class="profile_box">
+        <div class="counter-tag">
+            <p>Seen</p>
+            <p>5</p>
+        </div>
+        <div class="profile_content">
+          <p class="cat_name">Name</p>
+        <p class="cat_nickname">Nickname</p>
+        <p class="cat_details">#yrs (m/f) TNR (yr)</p>
+        <img src="assets/img/site/no-img.png" alt="" class="cat_img">
+        <button class="tracker-btn button">I saw you today!</button>  
+        </div>
+    </div>
+
+    <div class="profile_box">
+        <div class="counter-tag">
+            <p>Seen</p>
+            <p>5</p>
+        </div>
+        <div class="profile_content">
+          <p class="cat_name">Name</p>
+        <p class="cat_nickname">Nickname</p>
+        <p class="cat_details">#yrs (m/f) TNR (yr)</p>
+        <img src="assets/img/site/no-img.png" alt="" class="cat_img">
+        <button class="tracker-btn button">I saw you today!</button>  
+        </div>
+    </div>
+
 
 </div>
 
@@ -258,13 +302,25 @@
 <section class="faq section" id="faq">
     <h4 class="section_title">FAQ</h4>
        <div class="section_text">
+
+        <details>
+            <summary class="faq_q" id="faq1"><span>What is the "Community Cat Tracker"?</span></summary>
+            <div>
+                <p>The Community Cat Tracker is a way for neighbors to learn about community cats in their area and get up-to-date information about them.
+                </br>
+                </br> 
+                When a cat you've been feeding outside or have enjoyed seeing out in the neighborhood suddenly disappears, you wonder what happened to it and hope that it's okay. The Cat Tracker allows residents to submit "cat profiles" for local community cats so that all residents can find information about all the cats in one place.        
+                </p>
+            </div>
+        </details>
+
         <details>
             <summary class="faq_q" id="faq1"><span>Who runs the website?</span></summary>
             <div>
                 <p>My name is Colin. I'm an American living in Matsudo City, and I have three pet cats whom I adopted or rescued. 
                 </br>
                 </br>
-                Recently, I began studying web development. I made this website to practice my skills, and to help everyone in my neighborhood keep track of the community cats more easily.                 
+                Recently, I began studying web development. I made this website to practice my skills, and to help everyone in my neighborhood keep track of the community cats more easily.        
                 </p>
             </div>
         </details>
@@ -281,18 +337,18 @@
         <details>
             <summary class="faq_q" id="faq3"><span>What is a "community cat"?</span></summary>
             <div>
-                <p>A "community cat" is a cat that lives outside and is taken care of by the community. You can learn more about community cats on Matsudo City's website.
+                <p>A "community cat" is a cat that lives outside and is taken care of by the community. You can learn more about community cats on <a href="https://www.city.matsudo.chiba.jp/kurashi/pet/nekotonokyousei.html" target="_blank">Matsudo City's website</a>.
                 </p>
             </div>
         </details>
 
         <details>
-            <summary class="faq_q" id="faq4"><span>Does the website save my personal information?</span></summary>
+            <summary class="faq_q" id="faq4"><span>Does this website save my personal information?</span></summary>
             <div>
                 <p>No, the website doesn't save anyone's personal information. 
                 </br>
                 </br>
-                The "I saw you today!" button is only programmed to count how many times it is clicked per week, and refresh that number every Sunday night. 
+                The "I saw you today!" button is only programmed to count how many times it is clicked per week, and refresh that number every Sunday night. It doesn't save personal information about the person who clicked the button.
                 </p>
                 
             </div>
@@ -312,7 +368,7 @@
          <details>
             <summary class="faq_q" id="faq6"><span>I found a sick/injured cat outside, what should I do?</span></summary>
             <div>
-                <p>Visit the <a href="#resources">Resources</a> section for links to local and national volunteer organizations, online support gropus for cat rescue, and NPOs.
+                <p>Visit the <a href="#resources">Resources</a> section for links to local and national volunteer organizations, online support gropus for cat rescue, and NPOs in Japan.
                 </br>
             </br>
             Because this website is managed by just one person, I'm not able to respond to direct inquiries about cat rescue, even for cats in the neighborhood.
@@ -355,34 +411,71 @@
     <h5 class="section_title">Resources</h5>
     <div class="section_text resource_list">
         <div class="resource_links">
-          <p>Matsudo City</p>
+          <p>Information from Matsudo City</p>
         <ul>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
+           <li>
+            <span>
+                <a href="https://www.city.matsudo.chiba.jp/kurashi/pet/nekotonokyousei.html" target="_blank">About Community Cats</a>
+            </span>
+        </li>
+
+           <li>
+            <span>
+                <a href="https://www.doubutukikin.or.jp/activity/sakuraneko-tnr/" target="_blank">What is Sakura Neko TNR?</a>
+            </span>
+        </li>
+            
+           <li>
+            <span>
+                <a href="https://www.city.matsudo.chiba.jp/kurashi/pet/sakuraneko.html" target="_blank">Sterilization Subsidies</a>
+        </span>
+    </li>
+           
+           <li>
+            <span>
+                <a href="https://www.city.matsudo.chiba.jp/kurashi/pet/nekonokaikata.html" target="_blank">About Cat Care</a>
+        </span>
+        </li>
+
+            <li>
+                <span>
+                    <a href="https://www.city.matsudo.chiba.jp/kurashi/pet/hogoki.html" target="_blank">Chiba-ken Animal Welfare Projects</a>
+            </span>
+            </li>
+
         </ul>  
         </div>
 
         <div class="resource_links">
-          <p>Animal Rescues</p>
+          <p>Animal Rescues & Vets</p>
         <ul>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
+            <li>
+                <span>
+                    <a href="https://www.kawakujirescue.org/" target="_blank">Kawakuji Animal Rescue</a>
+            </span>
+            </li>
+
+            <li>
+                <span>
+                    <a href="https://arkbark.net/en/" target="_blank">Animal Refuge Kansai</a>
+            </span>
+            </li>
+
+            <li>
+                <span>
+                    <a href="https://inagakiah.com/" target="_blank">Inagaki Animal Hospital</a>
+            </span>
+            </li>
+
+            <li>
+                <span>
+                <a href="https://www.yabashira-ahp.com/" target="_blank">Yahashira Animal Hostpial</a>
+            </span>
+            </li>
+        
         </ul>  
         </div>
 
-        <div class="resource_links">
-          <p>Information</p>
-        <ul>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-           <a href="#" target="_blank"><li>Link 1</li></a>
-        </ul>  
-        </div>
         
     </div>
 </section>

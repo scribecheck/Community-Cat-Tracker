@@ -2,6 +2,7 @@
 let toggleoff = document.querySelector("#toggleoff");
 let toggleon = document.querySelector("#toggleon");
 let mode = localStorage.getItem("mode");
+let toggleButton = document.getElementById('theme-btn'); 
 
 function updateMode(mode) {
   if (mode === 'darkmode') {
@@ -31,13 +32,15 @@ toggleoff.addEventListener('click', function () {
 
 if (mode === 'darkmode') {
     updateMode('darkmode');
+    
 } else if (mode === 'lightmode'){
     updateMode('lightmode');
+
 } else {
     updateMode('lightmode');
 }
 
-/*=============== ADD SHADOW HEADER ===============*/
+// =============== ADD SHADOW HEADER ===============
 
 const shadowHeader = () =>{
     const header = document.getElementById('header')
@@ -48,7 +51,7 @@ const shadowHeader = () =>{
 window.addEventListener('scroll', shadowHeader)
 
 
-/*=============== SWIPER ===============*/
+// =============== SWIPER ===============
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -77,4 +80,23 @@ const swiper = new Swiper('.swiper', {
   }
 
 });
+
+// =============== SCROLL-TO ===============
+
+const section = document.getElementById('section');
+const scrollOffset = 25; // Adjust this value to match the height of your fixed header
+
+function scrollAndOffset() {
+  const offsetPosition = section.offsetTop - scrollOffset;
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth' // Add a smooth scroll effect for a better user experience
+  });
+}
+
+// Call the scrollAndOffset function when the anchor link is clicked
+document.getElementById('news').addEventListener('click', scrollAndOffset);
+document.getElementById('cats').addEventListener('click', scrollAndOffset);
+document.getElementById('faq').addEventListener('click', scrollAndOffset);
+document.getElementById('resources').addEventListener('click', scrollAndOffset);
 

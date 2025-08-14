@@ -13,6 +13,7 @@ Info to include:
 **Login / registration / password? (for security of cats and users)
 	- Sendabori residents only?
 **EN/JP versions
+https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505
 
 **light/dark versions
 
