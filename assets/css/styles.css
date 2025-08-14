@@ -23,7 +23,8 @@
 --font-h3: 1.5rem;
 --font-h4: 1.2rem;
 --font-reg: 1rem;
---font-small: .9rem ;
+--font-small: 0.9rem;
+--font-xsmall: 0.7rem;
 --font-bold: 600;
 
   /*========== z index ==========*/
@@ -49,7 +50,7 @@
 
     --section-color: #a9d6e5;
 
-    --text-light: #f3f3f3;
+    --text-light: #fffefe;
     --text-regular: #000;
 
     transition: .2s ease;
@@ -171,6 +172,8 @@ ul {
     width: 70%;
     font-size: var(--font-reg);
 }
+
+
 
 
 /*=============== HEADER ===============*/
@@ -345,16 +348,37 @@ ul {
 .counter-tag {
     position: absolute;
     transform: translate(10px, -15px);
-    width: 45px;
-    height: 60px;
+    width: 60px;
+    height: 70px;
     background-color: var(--item-color);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 .counter-tag p {
     text-align: center;
+    margin: 8px auto;
     font-size: var(--font-small);
     color: var(--text-light)
+}
+
+.info-tag {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.adopted {
+    background-color: #ff78aa;
+}
+
+.foster {
+    background-color: #ff7070;
+}
+.info-tag p {
+    text-align: center;
+    margin: 8px auto;
+    font-size: var(--font-h3);
+    color: var(--text-light);
 }
 
 .profile_content {
@@ -365,7 +389,7 @@ ul {
 }
 
 .cat_name {
-    font-size: var(--font-h4);
+    font-size: var(--font-h3);
     font-weight: 600;
     padding-top: 1rem;
 }
@@ -378,6 +402,7 @@ ul {
 .cat_img {
     margin: 1rem 0;
 }
+
 
 /*=============== FAQ ===============*/
 .faq {

@@ -13,7 +13,23 @@ Resources
 
 
 ================ CATS ================
+Mojo
 
+Muffin
+
+Miso
+
+Sophie
+
+Zephir
+https://www.japancatnetwork.org/adopted/zephir
+
+Bora
+https://www.japancatnetwork.org/adopted/bora
+
+Maple
+
+Beauty
 
 ================ FAQ ================
 * Who runs the website?
