@@ -6,8 +6,8 @@
     <title>地域猫トラッカー Community Cat Tracker</title>
     
     <!-- ================== CSS Stylesheet ================== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/styles-ja.css">
+    <link rel="stylesheet" id="styles-link" href="assets/css/styles-ja.css">
+    <link rel="stylesheet" id="styles-link" href="assets/css/styles.css">
 
     <!-- ================== Fonts ================== -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
@@ -50,8 +50,8 @@
         <!-- Language -->
             <li class="action">
                 <i class="ri-global-line"></i>
-                <a href="index.html" onclick="changeLanguage('ja')">日本語</a>
-                <a href="index.html" onclick="changeLanguage('en')">English</a>
+                <a href="index.html" id="japanese" onclick="changeLanguage('ja')">日本語</a>
+                <a href="index.html" id="english" onclick="changeLanguage('en')">English</a>
         </li>
         <!-- Theme Change -->   
             <li class="action" id="theme-btn">

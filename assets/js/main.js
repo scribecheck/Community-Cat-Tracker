@@ -101,6 +101,9 @@ document.getElementById('faq').addEventListener('click', scrollAndOffset);
 document.getElementById('resources').addEventListener('click', scrollAndOffset);
 
 // =============== Language Button ===============
+const japanese = document.getElementById("japanese");
+const english = document.getElementById("english");
+
 // Function to fetch language data
 async function fetchLanguageData(lang) {
   const response = await fetch(`assets/json/${lang}.json`);
@@ -153,8 +156,11 @@ function toggleJapaneseStylesheet(lang) {
     newLink.rel = "stylesheet";
     newLink.href = "assets/css/styles-ja.css"; // Path to Japanese stylesheet
     head.appendChild(newLink);
+    japanese.style.display = 'none';
+    english.style.display = 'block';
   }
 }
+
 
 // Call updateContent() on page load
 window.addEventListener("DOMContentLoaded", async () => {

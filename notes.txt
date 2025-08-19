@@ -14,10 +14,13 @@ Info to include:
 	- Sendabori residents only?
 **EN/JP versions
 https://medium.com/@nohanabil/building-a-multilingual-static-website-a-step-by-step-guide-7af238cc8505
+https://github.com/nohaelgendy/en-ar-demo/tree/main
 
 **light/dark versions
 
 * cat profiles
+
+https://stackoverflow.com/questions/5862781/how-to-count-clicks-with-javascript
 ** Filters, search option?
 - name (nicknames)
 - approx. age
