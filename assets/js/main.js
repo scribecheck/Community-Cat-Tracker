@@ -1,4 +1,4 @@
-// Dark Mode Toggle
+// =============== Dark Mode Toggle ===============
 let toggleoff = document.querySelector("#toggleoff");
 let toggleon = document.querySelector("#toggleon");
 let mode = localStorage.getItem("mode");
@@ -100,3 +100,77 @@ document.getElementById('cats').addEventListener('click', scrollAndOffset);
 document.getElementById('faq').addEventListener('click', scrollAndOffset);
 document.getElementById('resources').addEventListener('click', scrollAndOffset);
 
+// =============== Language Button ===============
+// Function to fetch language data
+async function fetchLanguageData(lang) {
+  const response = await fetch(`assets/json/${lang}.json`);
+  return response.json();
+}
+
+// Function to set the language preference
+function setLanguagePreference(lang) {
+  localStorage.setItem("language", lang);
+  location.reload();
+}
+
+// Function to update content based on selected language
+function updateContent(langData) {
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+
+    if (element.tagName === "INPUT" && key === "placeholder_text") {
+      // If the element is an input with placeholder_text attribute, set placeholder
+      element.placeholder = langData[key];
+    } else {
+      // For other elements, set text content
+      //element.textContent = langData[key];
+      element.innerHTML = langData[key];
+    }
+  });
+}
+
+// Function to change language
+async function changeLanguage(lang) {
+  await setLanguagePreference(lang);
+
+  const langData = await fetchLanguageData(lang);
+  updateContent(langData);
+
+  //
+  toggleJapaneseStylesheet(lang); // Toggle Japanese stylesheet
+}
+
+// Function to toggle Japanese stylesheet based on language selection
+function toggleJapaneseStylesheet(lang) {
+  const head = document.querySelector("head");
+  const link = document.querySelector("#styles-link");
+
+  if (link) {
+    head.removeChild(link); // Remove the old stylesheet link
+  } else if (lang === "ja") {
+    const newLink = document.createElement("link");
+    newLink.id = "styles-link";
+    newLink.rel = "stylesheet";
+    newLink.href = "assets/css/styles-ja.css"; // Path to Japanese stylesheet
+    head.appendChild(newLink);
+  }
+}
+
+// Call updateContent() on page load
+window.addEventListener("DOMContentLoaded", async () => {
+  const userPreferredLanguage = localStorage.getItem("language") || "en";
+  const langData = await fetchLanguageData(userPreferredLanguage);
+  updateContent(langData);
+  toggleJapaneseStylesheet(userPreferredLanguage);
+});
+
+// =============== Cat Count Button ===============
+// Call updateContent() on page load
+let count = 0;
+let btn = document.getElementById("tracker-btn");
+let disp = document.getElementById("display");
+        
+  btn.addEventListener("click", function () {
+            count++;
+            disp.innerHTML = count;
+        });

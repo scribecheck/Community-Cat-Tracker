@@ -7,6 +7,7 @@
     
     <!-- ================== CSS Stylesheet ================== -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-ja.css">
 
     <!-- ================== Fonts ================== -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
@@ -37,10 +38,10 @@
     </div>
 
     <ul class="nav_menu">
-        <li><a href="#">News</a></li>
-        <li><a href="#cats">Cats</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#resources">Resources</a></li>
+        <li><a data-i18n="nav_news" href="#">News</a></li>
+        <li><a data-i18n="nav_cats" href="#cats">Cats</a></li>
+        <li><a data-i18n="nav_faq" href="#faq">FAQ</a></li>
+        <li><a data-i18n="nav_resources" href="#resources">Resources</a></li>
     </ul>
 
  <!-- ================== Nav Actions ================== -->
@@ -49,7 +50,9 @@
         <!-- Language -->
             <li class="action">
                 <i class="ri-global-line"></i>
-                <a href="#">日本語</a></li>
+                <a href="index.html" onclick="changeLanguage('ja')">日本語</a>
+                <a href="index.html" onclick="changeLanguage('en')">English</a>
+        </li>
         <!-- Theme Change -->   
             <li class="action" id="theme-btn">
                 <i class="ri-moon-line fa-toggle-off" id="toggleoff"></i>
@@ -67,6 +70,7 @@
     <main class="main">
     <!-- ================== NEWS ================== -->
      <section class="news section" id="news">
+
 
 <!-- Slider main container -->
 <div class="swiper">
@@ -115,7 +119,6 @@
 
      </section>
 
-
 <!-- ================== CAT PROFILES ================== -->
  <section class="cats section" id="cats">
 
@@ -126,14 +129,14 @@
     <div class="profile_box" id="community">
         <div class="counter-tag">
             <p>Seen</p>
-            <p>#</p>
+            <p id="display">0</p>
         </div>
         <div class="profile_content">
               <p class="cat_name">Mojo</p>
         <p class="cat_nickname">Shiro-kun</p>
         <p class="cat_details">5yrs (male) TNR (2025)</p>
         <img src="assets/img/cats/profile-mojo2.JPG" alt="" class="cat_img">
-        <button class="tracker-btn button">I saw you today!</button> 
+        <button class="tracker-btn button" id="tracker-btn">I saw you today!</button> 
         </div>
         
     </div>
@@ -162,6 +165,20 @@
           <p class="cat_name">Muffin</p>
         <p class="cat_nickname">Kuro-kun</p>
         <p class="cat_details">#yrs (male) TNR (2025)</p>
+        <img src="assets/img/site/no-img.png" alt="" class="cat_img">
+        <button class="tracker-btn button">I saw you today!</button>  
+        </div>
+    </div>
+
+    <div class="profile_box" id="community">
+        <div class="counter-tag">
+            <p>Seen</p>
+            <p>#</p>
+        </div>
+        <div class="profile_content">
+          <p class="cat_name">Miso</p>
+        <p class="cat_nickname">Mini-Miso</p>
+        <p class="cat_details">#yrs () TNR (2024)</p>
         <img src="assets/img/site/no-img.png" alt="" class="cat_img">
         <button class="tracker-btn button">I saw you today!</button>  
         </div>
@@ -211,7 +228,7 @@
         <p class="cat_details">#yrs (female)</p>
         <img src="assets/img/cats/profile-sophie2.jpg" alt="" class="cat_img">
          <div class="info-tag adopted">
-            <p>Adopted 2023p>
+            <p>Adopted 2023</p>
         </div>  
         </div>
     </div>
@@ -235,7 +252,7 @@
         <p class="cat_details">2yrs (female)</p>
         <img src="assets/img/site/no-img.png" alt="" class="cat_img">
          <div class="info-tag adopted">
-            <p>Adopted 2024>
+            <p>Adopted 2024</p>
         </div>  
         </div>
     </div>
@@ -401,7 +418,7 @@
          <details>
             <summary class="faq_q" id="faq6"><span>I found a sick/injured cat outside, what should I do?</span></summary>
             <div>
-                <p>Visit the <a href="#resources">Resources</a> section for links to local and national volunteer organizations, online support gropus for cat rescue, and NPOs in Japan.
+                <p>Visit the <a href="#resources">Resources</a> section for links to local and national volunteer organizations, online support groups for cat rescue, and NPOs in Japan.
                 </br>
             </br>
             Because this website is managed by just one person, I'm not able to respond to direct inquiries about cat rescue, even for cats in the neighborhood.
@@ -520,8 +537,8 @@
         <p class="logo">地域猫トラッカー</br>Community Cat Tracker</p>
         <div class="footer_text">
            <p>Contact</p>
-           <p>Colin Savage</p>
-           <address type="address">Matsudo City, Chiba</address>
+           <p>Colin</p>
+           <address type="address">Chiba Prefecture</address>
            <address type="email">cmsvage@scribecheck.net</address>
         </div>
     </div>

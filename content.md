@@ -1,12 +1,12 @@
 ================ NAV ================
 EN/JP
 Light/Dark
-Cats
+Cats - 猫
 // Profiles
 // Missing
-News
-FAQ
-Resources
+News - ニュース
+FAQ - よくある質問
+Resources - リンク集
 
 
 ================ NEWS ================
