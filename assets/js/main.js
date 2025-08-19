@@ -173,4 +173,5 @@ let disp = document.getElementById("display");
   btn.addEventListener("click", function () {
             count++;
             disp.innerHTML = count;
+            onClick= "$.cookie('clicks', $.cookie('clicks') + 1);";
         });
