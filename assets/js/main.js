@@ -40,15 +40,6 @@ if (mode === 'darkmode') {
     updateMode('lightmode');
 }
 
-// =============== ADD SHADOW HEADER ===============
-
-const shadowHeader = () =>{
-    const header = document.getElementById('header')
-    // Add a class if the bottom offset is greater than 50 of the viewport
-    this.scrollY >= 50 ? header.classList.add('shadow-header') 
-                       : header.classList.remove('shadow-header')
-}
-window.addEventListener('scroll', shadowHeader)
 
 
 // =============== SWIPER ===============
@@ -170,14 +161,3 @@ window.addEventListener("DOMContentLoaded", async () => {
   toggleJapaneseStylesheet(userPreferredLanguage);
 });
 
-// =============== Cat Count Button ===============
-// Call updateContent() on page load
-let count = 0;
-let btn = document.getElementById("tracker-btn");
-let disp = document.getElementById("display");
-        
-  btn.addEventListener("click", function () {
-            count++;
-            disp.innerHTML = count;
-            onClick= "$.cookie('clicks', $.cookie('clicks') + 1);";
-        });

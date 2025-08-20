@@ -113,7 +113,7 @@ a:active {
 }
 
 img {
-    width: 150px;
+    width: 175px;
     height: auto;
 }
 
@@ -136,6 +136,18 @@ ul {
     width: 500px;
     margin-top: 25px;
     border-bottom: 4px solid var(--main-color);
+}
+
+.sub_title {
+    text-align: center;
+    margin: auto;
+    font-size: var(--font-h3);
+    padding: 0.5rem;
+    margin-top: 25px;
+}
+
+.sub_title span {
+    margin: auto 2rem;
 }
 
 .button {
@@ -166,12 +178,11 @@ ul {
 }
 
 .section_text {
-    margin: 1rem auto 1rem auto;
+    margin: 2rem auto 2rem auto;
     width: 70%;
     font-size: var(--font-reg);
+    text-align: center;
 }
-
-
 
 
 /*=============== HEADER ===============*/
@@ -191,7 +202,7 @@ ul {
 /*==== Nav Main Menu ====*/
 .navbar {
     color: var(--text-light);
-    padding: 15px 15%;
+    padding: 15px 5%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -201,6 +212,7 @@ ul {
 
 .navbar .nav_logo h1 {
     font-size: var(--font-h3);
+    text-align: center;
 }
 
 .navbar .nav_logo .logo_responsive {
@@ -324,6 +336,22 @@ ul {
 }
 
 /*=============== CAT PROFILES ===============*/
+.submission {
+    display: flex;
+    margin: 20px auto;
+}
+
+.submission-btn {
+    background-color: var(--button-color);
+    border-radius: 7px;
+    color: var(--text-light);
+    margin: auto;
+
+    text-align: center;
+    font-size: var(--font-h4);
+    padding: 0.5rem;
+
+}
 
 .profiles_container {
     display: flex;
@@ -335,34 +363,28 @@ ul {
 }
 
 .profile_box {
-    width: 250px;
-    height: 350px;
+    width: 240px;
+    height: 345px;
     background-color: var(--container-bg);
     outline: 2px solid var(--soft-border);
     display: flex;
     flex-direction: column;
 }
 
-.counter-tag {
+.info-tag {
     position: absolute;
-    transform: translate(10px, -15px);
-    width: 60px;
-    height: 70px;
+    transform: translate(5px, -30px);
+    width: 75px;
+    height: 60px;
     background-color: var(--item-color);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.counter-tag p {
+.info-tag p {
     text-align: center;
-    margin: 8px auto;
+    margin: 3px auto;
     font-size: var(--font-small);
     color: var(--text-light)
-}
-
-.info-tag {
-    position: relative;
-    width: 100%;
-    height: 50px;
 }
 
 .adopted {
@@ -370,15 +392,8 @@ ul {
 }
 
 .foster {
-    background-color: #ff7070;
+    background-color: #fc853f;
 }
-.info-tag p {
-    text-align: center;
-    margin: 8px auto;
-    font-size: var(--font-h3);
-    color: var(--text-light);
-}
-
 .profile_content {
     display: flex;
     flex-direction: column;
@@ -389,7 +404,7 @@ ul {
 .cat_name {
     font-size: var(--font-h3);
     font-weight: 600;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .cat_nickname {
@@ -398,9 +413,14 @@ ul {
 }
 
 .cat_img {
-    margin: 1rem 0;
+    margin: .5rem auto 0 auto;
 }
 
+
+.learn-more {
+    margin: auto;
+    font-size: var(--font-reg);
+}
 
 /*=============== FAQ ===============*/
 .faq {

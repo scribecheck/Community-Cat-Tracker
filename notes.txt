@@ -8,6 +8,12 @@ NOT FUNCTIONS OF WEBSITE:
 * finding cats to adopt
 * message board
 
+THINGS I'LL HAVE TO MANAGE
+* updated/add cat profile info from submissions
+* update NEWS section
+* respond to email inquiries
+* 
+
 
 Info to include:
 **Login / registration / password? (for security of cats and users)

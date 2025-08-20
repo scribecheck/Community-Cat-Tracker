@@ -14,10 +14,11 @@ data-i18n=""
 
 ================ CATS ================
 Cat Profiles - 猫のプロフィール 
+
 Seen - 見た
 I saw you today! - 今日会ったね
 No image - 写真なし
-Adopted - 家族を見つけた
+Adopted - 新しい家族
 Foster - 家族を見つけている
 
 Mojo
@@ -61,8 +62,8 @@ Recently, I began studying web development. I made this website to practice my s
 
 3. Who can use the website?
 誰でもウェブサイトを利用できますか？
-Anyone can visit the website. However, please only click the "I saw you today!" buttons if you have actually seen the cat in Sendabori in Matsudo City.
-誰でもウェブサイトを訪問できます。ただし、松戸市の千田堀で実際に猫を見た場合のみ、「今日見ました！」ボタンをクリックしてください。
+Anyone can visit the website. However, only residents of the local community should submit or update cat profiles.
+誰でもウェブサイトを訪問できます。
 
 
 4. What is a "community cat"?
@@ -73,18 +74,13 @@ A "community cat" is a cat that lives outside and is taken care of by the commun
 5. Does the website save my personal information?
 ウェブサイトは私の個人情報を保存しますか？ 
 No, the website doesn't save anyone's personal information.
-</br>
-</br>
-The "I saw you today!" button is only programmed to count how many times it is clicked per week, and refresh that number every Sunday night. It doesn't save personal information about the person who clicked the button. 
-ウェブサイトは誰の個人情報も保存しません。「今日会ったね！」ボタンは、週に何回クリックされたかをカウントするようにプログラムされており、その数を毎週日曜日の夜に更新するだけです。ボタンをクリックした人の個人情報は保存されません。
+
+ウェブサイトは誰の個人情報も保存しません。
 
 6. How can I add a cat profile to the website?
 ウェブサイトに猫のプロフィールを追加するにはどうすればいいですか？
-Thanks for helping out!
-</br>
-</br>
 You can use this form to submit a new cat profile or suggest changes to an existing one. 
-ご協力ありがとうございます！新しい猫のプロフィールを提出したり、既存のプロフィールを変更を提案したりするには、このフォームをご利用ください。
+新しい猫のプロフィールを提出したり、既存のプロフィールを変更を提案したりするには、このフォームをご利用ください。
 
 7. I found a sick/injured cat outside, what should I do?
 外で病気やケガをした猫を見つけた場合、どうすればいいですか？
@@ -94,9 +90,12 @@ Visit the Resources section for links to local and national volunteer organizati
 Because this website is managed by just one person, I'm not able to respond to direct inquiries about cat rescue, even for cats in the neighborhood. 
 「リンク集」では、地域や全国のボランティア団体、猫の保護に関するオンラインサポートグループ、日本のNPO法人のリンクをご確認いただけます。このウェブサイトは1人で運営しているため、猫の保護に関する直接の問い合わせにはお答えできません。近隣の猫に関するお問い合わせも同様です。
 
-* 
+8. I want to adopt a cat from the website!
+ウエブサイトから猫をひきとりたい！
+Because this website is not affiliated with an NPO or any official organization, we are not able to facilitate adoptions or fostering. We will not respond to inquiries about adoption or fostering, or asking for more information about the cats on the website.
+Please check the Resources section for a list of organizations in Japan where you can adopt or foster cats.
+このウェブサイトはNPOや公式機関と提携していないため、里親募集や一時預かりの仲介は行っておりません。里親募集や一時預かりに関するお問い合わせや、ウェブサイトに掲載されている猫に関する詳細な情報のご要望にはお答えできません。里親募集や一時預かりができる日本の団体の一覧は、リンク集をご確認ください。
 
-* 
 
 ================ RESOURCES ================
 Resources - リンク集
@@ -142,6 +141,7 @@ https://www.yabashira-ahp.com/
 * Other
 動物き基金 - 写真コンテスト Animal Action Fund Photo Contest
 https://contest.doubutukikin.or.jp/
+
 
 ================ FOOTER ================
 地域猫トラッカー
