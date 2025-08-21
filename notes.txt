@@ -1,3 +1,8 @@
+TO DO: 
+* Language button (only showing one option at a time)
+* Theme button (showing text along with icon)
+* add "site map" to the footer?
+
 Neighborhood Community Cats (website)
 GOAL: Create a central website where anyone in the area can go to check on the status of local community cats and find resources (mostly links and information on TNR).
 

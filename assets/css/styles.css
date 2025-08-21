@@ -19,10 +19,10 @@
 
 /*========== Font and typography ==========*/
 --font-h1: 2rem;
---font-h2: 1.85rem;
---font-h3: 1.75rem;
---font-h4: 1.5rem;
---font-reg: 1.3rem;
+--font-h2: 1.75rem;
+--font-h3: 1.55rem;
+--font-h4: 1.3rem;
+--font-reg: 1.1rem;
 --font-small: 1rem;
 --font-xsmall: 0.9rem;
 --font-bold: 600;
@@ -476,7 +476,9 @@ ul {
 }
 
 .resource_list .resource_links p {
-    font-size: var(--font-reg);
+    font-size: var(--font-h4);
+    font-weight: var(--font-bold);
+    margin-bottom: .5rem;
 }
 
 .resource_links ul li {
@@ -508,7 +510,7 @@ ul {
 }
 
 .footer_text p:first-child {
-    font-weight: 700;
+    font-weight:  var(--font-bold);
     font-size: var(--font-h4);
     margin-bottom: 5px;
 }

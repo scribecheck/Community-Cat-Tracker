@@ -1,3 +1,4 @@
+
 // =============== Dark Mode Toggle ===============
 let toggleoff = document.querySelector("#toggleoff");
 let toggleon = document.querySelector("#toggleon");
@@ -91,9 +92,15 @@ document.getElementById('cats').addEventListener('click', scrollAndOffset);
 document.getElementById('faq').addEventListener('click', scrollAndOffset);
 document.getElementById('resources').addEventListener('click', scrollAndOffset);
 
+
+
 // =============== Language Button ===============
 const japanese = document.getElementById("japanese");
 const english = document.getElementById("english");
+let toggleJA = document.querySelector("#toggleoJA");
+let toggleEN = document.querySelector("#toggleEN");
+let lang = localStorage.getItem("lang");
+let toggleLang = document.getElementById('lang-btn');
 
 // Function to fetch language data
 async function fetchLanguageData(lang) {
@@ -160,4 +167,6 @@ window.addEventListener("DOMContentLoaded", async () => {
   updateContent(langData);
   toggleJapaneseStylesheet(userPreferredLanguage);
 });
+
+
 

@@ -50,16 +50,26 @@
       <div class="nav_actions">
         <ul class="actions">
         <!-- Language -->
-            <li class="action">
-                <i class="ri-global-line"></i>
-                <a href="index.html" id="japanese" onclick="changeLanguage('ja')">日本語</a>
-                <a href="index.html" id="english" onclick="changeLanguage('en')">English</a>
+            <li class="action" id="lang-btn">
+                <div class="lang-btn" id="toggleJA"><a href="index.html" id="japanese" onclick="changeLanguage('ja')"><i class="ri-global-line"></i> 日本語</a>
+                </div>
+
+                <div class="lang-btn" id="toggleEN">
+                    <a href="index.html" id="english" onclick="changeLanguage('en')"><i class="ri-global-line"></i> English</a>
+                </div>
         </li>
+<!-- 
+        <li class="action" id="lang-btn">
+            <div class="lang-btn" id="toggleJA"><i class="ri-global-line"></i> 日本語</div>
+            <div class="lang-btn" id="toggleEN"><i class="ri-global-line"></i> English</div>
+        </li>-->
         <!-- Theme Change -->   
             <li class="action" id="theme-btn">
-                <i class="ri-moon-line fa-toggle-off" id="toggleoff"></i>
-                <i class="ri-sun-line fa-toggle-on" id="toggleon"></i>
+                <div class="theme-btn" id="toggleon"><i class="ri-sun-line"></i> <span data-i18n="theme"> Theme</span></div>
+                <div class="theme-btn" id="toggleoff"><i class="ri-moon-line"></i><span data-i18n="theme"> Theme</span></div>
             </li>
+
+            
         <!-- Site Map 
             <li class="action">
                 <i class="ri-mind-map"></i>
