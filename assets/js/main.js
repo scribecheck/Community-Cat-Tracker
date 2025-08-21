@@ -95,12 +95,6 @@ document.getElementById('resources').addEventListener('click', scrollAndOffset);
 
 
 // =============== Language Button ===============
-const japanese = document.getElementById("japanese");
-const english = document.getElementById("english");
-let toggleJA = document.querySelector("#toggleoJA");
-let toggleEN = document.querySelector("#toggleEN");
-let lang = localStorage.getItem("lang");
-let toggleLang = document.getElementById('lang-btn');
 
 // Function to fetch language data
 async function fetchLanguageData(lang) {
@@ -132,13 +126,12 @@ function updateContent(langData) {
 
 // Function to change language
 async function changeLanguage(lang) {
-  await setLanguagePreference(lang);
-
-  const langData = await fetchLanguageData(lang);
-  updateContent(langData);
-
-  //
-  toggleJapaneseStylesheet(lang); // Toggle Japanese stylesheet
+    await setLanguagePreference(lang);
+    
+    const langData = await fetchLanguageData(lang);
+    updateContent(langData);
+  
+    toggleJapaneseStylesheet(lang); // Toggle Japanese stylesheet
 }
 
 // Function to toggle Japanese stylesheet based on language selection
@@ -152,12 +145,11 @@ function toggleJapaneseStylesheet(lang) {
     const newLink = document.createElement("link");
     newLink.id = "styles-link";
     newLink.rel = "stylesheet";
-    newLink.href = "assets/css/styles-ja.css"; // Path to Japanese stylesheet
+    newLink.href = "./assets/css/styles-ja.css"; // Path to Japanese stylesheet
     head.appendChild(newLink);
-    japanese.style.display = 'none';
-    english.style.display = 'block';
   }
 }
+
 
 
 // Call updateContent() on page load
