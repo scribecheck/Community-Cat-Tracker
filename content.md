@@ -21,6 +21,11 @@ No image - 写真なし
 Adopted - 新しい家族
 Foster - 家族を見つけている
 
+This website depends on local residents helping to keep the information updated and accurate. 
+You can submit a new cat profile (or suggest changes/updates to an existing profile) by using the submission form! Just click the button below.
+このウェブサイトは、地域住民の協力により情報の更新と正確性を維持しています。
+新しい猫のプロフィールを投稿したり（または既存のプロフィールへの変更や更新を提案したり）するには、投稿フォームをご利用ください！下のボタンをクリックしてください。
+
 Mojo
 
 Muffin
