@@ -50,7 +50,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 'auto',
   centeredSlides: 'auto',
-  spaceBetween: 16,
+  spaceBetween: 32,
   grabCursor: true,
 
 
@@ -67,7 +67,7 @@ const swiper = new Swiper('.swiper', {
 
   breakpoints: {
     1220: {
-      spaceBetween: 32,
+      spaceBetween: 15,
     }
   }
 

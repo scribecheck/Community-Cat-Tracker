@@ -3,7 +3,8 @@
     "cats": "猫",
     "faq": "よくある質問",
     "resources": "リンク集",
-    "theme": " テーム",
+    "theme-light": " テーム",
+    "theme-dark": " テーム",
 
     "news1_title": "ニュース1",
     "news1_text": "ニュース1",
