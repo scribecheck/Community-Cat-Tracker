@@ -22,9 +22,9 @@
 --font-h2: 1.75rem;
 --font-h3: 1.55rem;
 --font-h4: 1.3rem;
---font-reg: 1.1rem;
---font-small: 1rem;
---font-xsmall: 0.9rem;
+--font-reg: 1rem;
+--font-small: .9rem;
+--font-xsmall: 0.75rem;
 --font-bold: 600;
 
   /*========== z index ==========*/
@@ -37,7 +37,7 @@
     --main-color: #006ba6;
 
     --button-color: #00a5cf;
-    --item-color: #023e7d;
+    --item-color: #005ab9;
     --item2-color: #ff78aa;
     --item3-color: #fc853f;
 
@@ -63,18 +63,18 @@
     --main-color: #012151;
 
     --button-color: #19768e;
-    --item-color: #093564;
-    --item2-color: #9c4162;
-    --item3-color: #9c4d20;
+    --item-color: #005ab9;
+    --item2-color: #ff78aa;
+    --item3-color: #fc853f;
 
     --link-color: #81c6f8;
     --link-visited: #e10000;
     --link-active: #000;
     --link-hover: #f7f252;
 
-    --background: #131313;
+    --background: #1f1f1f;
     --container-bg: #000000;
-    --soft-border: #464646;
+    --soft-border: #686868;
 
     --section-color: #31444e;
     
@@ -125,6 +125,7 @@ a:active {
 img {
     width: 175px;
     height: auto;
+    border-radius: 6px;
 }
 
 ul {
@@ -293,14 +294,17 @@ ul {
     font-size: var(--font-small);
 }
 
-.nav_actions ul li i {
-    color: var(--link-color);
-}
-
 
 
 .nav_actions .actions .action:hover {
     color: var(--link-hover);
+}
+
+.navbar .nav_actions .action {
+    background-color: var(--button-color);
+    padding: 2px 5px;
+    margin: 5px auto;
+    border-radius: 5px;
 }
 
 /*=============== HOME ===============*/
@@ -393,30 +397,26 @@ ul {
     outline: 2px solid var(--soft-border);
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
-.info-tag {
+.sex-label {
     position: absolute;
-    transform: translate(5px, -25px);
-    width: 75px;
-    height: 60px;
-    background-color: var(--item-color);
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+    transform: translate(12.6rem, .2rem);
+    font-size: 2rem;
+    color: rgb(25, 77, 189);
 }
-.info-tag p {
-    text-align: center;
-    margin: 3px auto;
-    font-size: var(--font-small);
-    color: var(--text-light);
+
+.profile_box .female {
+    color: rgb(229, 84, 139);
 }
 
 .adopted {
-    background-color: var(--item2-color);
+    color: var(--item2-color);
 }
 
 .foster {
-    background-color: var(--item3-color);
+    color: var(--item3-color);
 }
 .profile_content {
     display: flex;
@@ -426,9 +426,9 @@ ul {
 }
 
 .cat_name {
-    font-size: var(--font-h4);
-    font-weight: 600;
-    padding-top: 2rem;
+    font-size: var(--font-h3);
+    font-weight: 800;
+    padding-top: 1rem;
 }
 
 .cat_nickname {
@@ -437,7 +437,13 @@ ul {
 }
 
 .cat_img {
-    margin: .5rem auto 0 auto;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+.learn-more {
+    text-align: center;
+    text-decoration: underline;
 }
 
 /*=============== FAQ ===============*/
@@ -560,7 +566,7 @@ ul {
 
 .swiper {
   width: 700px;
-  height: 400px;
+  height: 500px;
   border-radius: 20px;
 }
 .swiper-wrapper {
@@ -568,7 +574,8 @@ ul {
 }
 
 .news_img {
-    height: 250px;
+    width: 250px;
+    height: auto;
 
 }
 
@@ -589,6 +596,12 @@ ul {
 .profile_box {
     width: 220px;
     height: 355px;
+}
+.sex-label {
+    position: absolute;
+    transform: translate(11rem, .5rem);
+    font-size: 2rem;
+    color: rgb(25, 77, 189);
 }
 
 /*=============== FAQ ===============*/
@@ -632,18 +645,57 @@ ul {
 
 /*==== Smartphones (small devices) 428px====*/
 @media  (max-width: 429px) {
- .header {
+
+a {
+    text-decoration: underline;
+}
+
+.header {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--main-color);
-    width: 100%;
-    height: 12vh;
-    transition: box-shadow .4s, background-color .4s;
+    height: 10vh;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: var(--font-small);
+  width: 180px;
+  margin: 1rem auto;
+}
+
+.btn-small {
+  border-radius: 10px;
+  padding: 3px 5px;
+  font-size: var(--font-xsmall);
+  width: 120px;
+}
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.section_title {
+    font-size: var(--font-h4);
+    padding: 0.5rem;
+    max-width: 200px;
+    margin-top: 10px;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.section_text {
+    margin: 2rem auto;
+    width: 80%;
+    font-size: var(--font-small);
 }
 
 /*==== Nav Main Menu ====*/
+
+.navbar {
+    flex-flow: column-reverse;
+}
 
 .navbar .nav_logo h1 {
     display: none;
@@ -653,8 +705,12 @@ ul {
     gap: 20px;
 }
 
+.navbar .nav_actions ul {
+    display: flex;
+}
+
 .navbar ul li a {
-    font-size: var(--font-xsmall);
+    font-size: var(--font-h4);
 }
 
 /*==== Nav Actions ====*/
@@ -664,8 +720,8 @@ ul {
 
 /*==== News Swiper ====*/
 .swiper {
-  width: 350px;
-  height: 500px;
+  width: 330px;
+  max-height: 500px;
 }
 
 .swiper-wrapper {
@@ -677,33 +733,73 @@ ul {
     padding: 2rem;
 }
 
+.swiper-btn {
+    color: var(--button-color);
+    font-size: var(--font-h4);
+    padding: 2px;
+    border: 1px solid var(--soft-border);
+    background-color: hsla(0, 0%, 100%, 0.784);
+}
+
 .news_img {
     width: auto;
-    height: 180px;
+    height: 210px;
     margin-right: auto;
 }
 
 .news_info {
     max-width: 350px;
-    gap: 10px;
+    gap: 1px;
 }
 
 .news_title {
-    font-size: var(--font-h4);
+    font-size: var(--font-reg);
 }
 
 .news_text {
-    font-size: var(--font-small);
+    font-size: var(--font-xsmall);
+}
+
+/*=============== CAT PROFILES ===============*/
+
+.profiles_container {
+    max-width: 340px;
+}
+
+.profile_box {
+    width: 150px;
+    height: 215px;
+}
+
+.sex-label {
+    position: absolute;
+    transform: translate(7.5rem, .2rem);
+    font-size: 1.5rem;
+}
+
+.profile_content p,
+.profile_content a {
+    font-size: var(--font-xsmall)
+}
+
+.cat_img {
+    width: 90px;
+    height: auto;
+    margin: .5rem auto;
+}
+
+.profile_content .cat_name {
+    font-size: var(--font-reg);
 }
 
 /*=============== FAQ ===============*/
 
 .faq .section_text {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .faq_q {
-    font-size: var(--font-reg);
+    font-size: var(--font-small);
 }
 
 .faq div p {
@@ -718,12 +814,12 @@ ul {
 }
 
 .resource_list .resource_links p {
-    font-size: var(--font-h4);
+    font-size: var(--font-reg);
 }
 
 .resource_links a {
     padding: 0.2rem;
-    font-size: var(--font-reg);
+    font-size: var(--font-small);
 }
 
 }

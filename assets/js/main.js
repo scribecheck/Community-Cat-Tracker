@@ -48,7 +48,7 @@ if (mode === 'darkmode') {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   centeredSlides: 'auto',
   spaceBetween: 32,
   grabCursor: true,
