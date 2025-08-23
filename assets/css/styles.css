@@ -273,7 +273,8 @@ ul {
     transition: 0.2s ease;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.navbar ul li:hover {
     color: var(--link-hover);
 }
 
@@ -294,16 +295,10 @@ ul {
     font-size: var(--font-small);
 }
 
-
-
-.nav_actions .actions .action:hover {
-    color: var(--link-hover);
-}
-
 .navbar .nav_actions .action {
     background-color: var(--button-color);
     padding: 2px 5px;
-    margin: 5px auto;
+    margin: 6px auto;
     border-radius: 5px;
 }
 
@@ -654,7 +649,7 @@ a {
     position: sticky;
     top: 0;
     left: 0;
-    height: 10vh;
+    height: 12vh;
 }
 
 .button {
@@ -692,9 +687,10 @@ a {
 }
 
 /*==== Nav Main Menu ====*/
-
 .navbar {
     flex-flow: column-reverse;
+    padding: 0;
+    margin-top: 5px;
 }
 
 .navbar .nav_logo h1 {
@@ -702,7 +698,7 @@ a {
 }
 
 .navbar ul {
-    gap: 20px;
+    gap: 30px;
 }
 
 .navbar .nav_actions ul {
@@ -710,7 +706,7 @@ a {
 }
 
 .navbar ul li a {
-    font-size: var(--font-h4);
+    font-size: var(--font-small);
 }
 
 /*==== Nav Actions ====*/

@@ -294,14 +294,11 @@ ul {
     font-size: var(--font-small);
 }
 
-.nav_actions ul li i {
-    color: var(--link-color);
-}
-
-
-
-.nav_actions .actions .action:hover {
-    color: var(--link-hover);
+.navbar .nav_actions .action {
+    background-color: var(--button-color);
+    padding: 2px 5px;
+    margin: 6px auto;
+    border-radius: 5px;
 }
 
 /*=============== HOME ===============*/
@@ -689,13 +686,22 @@ a {
 }
 
 /*==== Nav Main Menu ====*/
+.navbar {
+    flex-flow: column-reverse;
+    padding: 0;
+    margin-top: 5px;
+}
 
 .navbar .nav_logo h1 {
     display: none;
 }
 
 .navbar ul {
-    gap: 20px;
+    gap: 30px;
+}
+
+.navbar .nav_actions ul {
+    display: flex;
 }
 
 .navbar ul li a {
@@ -709,7 +715,7 @@ a {
 
 /*==== News Swiper ====*/
 .swiper {
-  width: 350px;
+  width: 330px;
   max-height: 500px;
 }
 
@@ -732,13 +738,13 @@ a {
 
 .news_img {
     width: auto;
-    height: 110px;
+    height: 210px;
     margin-right: auto;
 }
 
 .news_info {
     max-width: 350px;
-    gap: 10px;
+    gap: 1px;
 }
 
 .news_title {
