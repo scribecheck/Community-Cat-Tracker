@@ -3,19 +3,27 @@
 :root {
 
     /*========== Colors ==========*/
---main-color: #022b3a;
---button-color: #f7f252 ; 
---item-color: #00842a;
---link-color: #0052b2;
---link-visited: #e10000;
---link-active: #00842a;
---link-hover: #72baf5;
---background: #f7f7f7;
---container-bg: #fff;
+--main-color: #006ba6;
 
+    --button-color: #00a5cf;
+    --item-color: #005ab9;
+    --item2-color: #ff78aa;
+    --item3-color: #fc853f;
 
---text-inverse: #f3f3f3;
---text-regular: #000;
+    --link-color: #42a4ff;
+    --link-visited: #7d8597;
+    --link-active: #cd8a0d;
+    --link-hover: #ffbc42;
+
+    --background: #f7f7f7;
+    --container-bg: #fff;
+    --soft-border: #cccccc;
+
+    --section-color: #a9d6e5;
+
+    --text-inverse: #fffefe;
+    --text-regular: #000;
+    --text-light: #fffefe;
 
 /*========== Font and typography ==========*/
 --font-h1: 2rem;
@@ -541,7 +549,7 @@ ul {
 }
 
 .navbar ul {
-    gap: 25px;
+    gap: 45px;
 }
 .navbar .nav_logo h1 {
     font-size: var(--font-small);

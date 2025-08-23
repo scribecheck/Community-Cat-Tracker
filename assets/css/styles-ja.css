@@ -540,7 +540,7 @@ ul {
 }
 
 .navbar ul {
-    gap: 25px;
+    gap: 40px;
 }
 .navbar .nav_logo h1 {
     font-size: var(--font-small);
