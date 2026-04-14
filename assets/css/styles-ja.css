@@ -63,7 +63,7 @@
     --main-color: #012151;
 
     --button-color: #19768e;
-    --item-color: #005ab9;
+    --item-color: #4b7fb6;
     --item2-color: #ff78aa;
     --item3-color: #fc853f;
 
@@ -84,7 +84,6 @@
 
     transition: .1s ease;
         }
-
 
 /*=============== BASE ===============*/
 * {
@@ -146,7 +145,7 @@ ul {
     padding: 0.5rem;
     max-width: 500px;
     margin-top: 25px;
-    border-bottom: 4px solid var(--main-color);
+    border-bottom: 4px solid var(--item-color);
 }
 
 .sub_title {
@@ -540,7 +539,7 @@ ul {
 }
 
 .navbar ul {
-    gap: 40px;
+    gap: 45px;
 }
 .navbar .nav_logo h1 {
     font-size: var(--font-small);
@@ -595,13 +594,11 @@ ul {
     position: absolute;
     transform: translate(11rem, .5rem);
     font-size: 2rem;
-    color: rgb(25, 77, 189);
+
 }
 
 /*=============== FAQ ===============*/
-.faq {
-    background-color: var(--container-bg);
-}
+
 
 .faq .section_text {
     margin-top: 3rem;
@@ -614,7 +611,7 @@ ul {
 .faq_q {
     font-size: var(--font-h4);
     margin-bottom: 1rem;
-    color: var(--link-color);
+   
 }
 
 
@@ -634,6 +631,64 @@ ul {
     font-size: var(--font-reg);
     margin-bottom: 5px;
 }
+
+}
+
+/*==== Smartphones (small devices - landscape) 860px====*/
+@media  (max-width: 860px) {
+
+    .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 15vh;
+}
+
+/*==== Nav Actions ====*/
+.nav_actions ul li a {
+    font-size: var(--font-xsmall);
+}
+
+.navbar .nav_actions .action {
+    padding: 2px 5px;
+    margin: 6px auto;
+    border-radius: 5px;
+}
+
+/*==== News Swiper ====*/
+.swiper {
+  width: 80vw;
+  max-height: 400px;
+}
+
+
+.swiper-btn {
+    color: var(--button-color);
+    font-size: var(--font-h4);
+    padding: 2px;
+    border: 1px solid var(--soft-border);
+
+}
+
+.news_img {
+    width: auto;
+    height: 210px;
+    margin-right: auto;
+}
+
+.news_info {
+    max-width: 300px;
+    gap: 1px;
+}
+
+.news_title {
+    font-size: var(--font-reg);
+}
+
+.news_text {
+    font-size: var(--font-small);
+}
+
 
 }
 
@@ -676,7 +731,7 @@ a {
     padding: 0.5rem;
     max-width: 200px;
     margin-top: 10px;
-    border-bottom: 3px solid var(--main-color);
+
 }
 
 .section_text {
@@ -733,7 +788,7 @@ a {
     font-size: var(--font-h4);
     padding: 2px;
     border: 1px solid var(--soft-border);
-    background-color: hsla(0, 0%, 100%, 0.784);
+
 }
 
 .news_img {
@@ -818,3 +873,6 @@ a {
 }
 
 }
+
+
+
