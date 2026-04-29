@@ -60,17 +60,17 @@
 }
 
 .darkmode {
-    --main-color: #012151;
+    --main-color: #00456b;
 
-    --button-color: #19768e;
-    --item-color: #4b7fb6;
+    --button-color: #0082a2;
+    --item-color: #005ab9;
     --item2-color: #ff78aa;
     --item3-color: #fc853f;
 
     --link-color: #81c6f8;
     --link-visited: #e10000;
     --link-active: #000;
-    --link-hover: #f7f252;
+    --link-hover: #d1ca00;
 
     --background: #1f1f1f;
     --container-bg: #000000;
@@ -82,7 +82,7 @@
     --text-regular: #fffefe;
     --text-light: #fffefe;
 
-    transition: .1s ease;
+    transition: .2s ease;
         }
 
 /*=============== BASE ===============*/
@@ -272,7 +272,8 @@ ul {
     transition: 0.2s ease;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.navbar ul li:hover {
     color: var(--link-hover);
 }
 
@@ -498,15 +499,11 @@ ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 7rem;
+    gap: 3rem;
     color: var(--text-light);
 }
 
-.footer .logo {
-    font-size: var(--font-h4);
-    text-align: center;
-    font-weight: 500;
-}
+
 
 .footer_text {
     text-align: center;
@@ -517,6 +514,11 @@ ul {
     font-weight:  var(--font-bold);
     font-size: var(--font-h4);
     margin-bottom: 5px;
+}
+
+.footer_link {
+    color: var(--text-light);
+    text-decoration: 1px underline;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -547,7 +549,7 @@ ul {
 
 
 .navbar ul li a {
-        font-size: var(--font-h4);
+        font-size: var(--font-h5);
 }
 
 .nav_actions ul li a,
@@ -641,7 +643,7 @@ ul {
     position: sticky;
     top: 0;
     left: 0;
-    height: 15vh;
+    height: 10vh;
 }
 
 /*==== Nav Actions ====*/
@@ -651,7 +653,7 @@ ul {
 
 .navbar .nav_actions .action {
     padding: 2px 5px;
-    margin: 6px auto;
+    margin: 4px auto;
     border-radius: 5px;
 }
 
@@ -670,6 +672,10 @@ ul {
 
 }
 
+.swiper-slide {
+    height: 400px;
+}
+
 .news_img {
     width: auto;
     height: 210px;
@@ -677,7 +683,7 @@ ul {
 }
 
 .news_info {
-    max-width: 300px;
+    max-width: 200px;
     gap: 1px;
 }
 
@@ -743,9 +749,8 @@ a {
 /*==== Nav Main Menu ====*/
 .navbar {
     flex-flow: column-reverse;
-    padding: 0;
-    margin-top: 5px;
 }
+
 
 .navbar .nav_logo h1 {
     display: none;
@@ -781,6 +786,7 @@ a {
 .swiper-slide {
     display: grid;
     padding: 2rem;
+    height: 500px;
 }
 
 .swiper-btn {

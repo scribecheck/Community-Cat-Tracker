@@ -68,17 +68,17 @@
 }
 
 .darkmode {
-    --main-color: #012151;
+    --main-color: #00456b;
 
-    --button-color: #19768e;
-    --item-color: #4b7fb6;
+    --button-color: #0082a2;
+    --item-color: #005ab9;
     --item2-color: #ff78aa;
     --item3-color: #fc853f;
 
     --link-color: #81c6f8;
     --link-visited: #e10000;
     --link-active: #000;
-    --link-hover: #f7f252;
+    --link-hover: #d1ca00;
 
     --background: #1f1f1f;
     --container-bg: #000000;
@@ -90,7 +90,7 @@
     --text-regular: #fffefe;
     --text-light: #fffefe;
 
-    transition: .1s ease;
+    transition: .2s ease;
         }
 
 
@@ -652,7 +652,7 @@ ul {
     position: sticky;
     top: 0;
     left: 0;
-    height: 15vh;
+    height: 10vh;
 }
 
 /*==== Nav Actions ====*/
@@ -754,8 +754,6 @@ a {
 /*==== Nav Main Menu ====*/
 .navbar {
     flex-flow: column-reverse;
-    padding: 0;
-    margin-top: 5px;
 }
 
 .navbar .nav_logo h1 {
