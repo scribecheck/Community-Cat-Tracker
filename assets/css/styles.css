@@ -68,23 +68,23 @@
 }
 
 .darkmode {
-    --main-color: #00456b;
+    --main-color: #002946;
 
-    --button-color: #0082a2;
-    --item-color: #005ab9;
+    --button-color: #265a80;
+    --item-color: #7cc8ff;
     --item2-color: #ff78aa;
     --item3-color: #fc853f;
 
     --link-color: #81c6f8;
     --link-visited: #e10000;
     --link-active: #000;
-    --link-hover: #d1ca00;
+    --link-hover: #bbb800;
 
-    --background: #1f1f1f;
+    --background: #141414;
     --container-bg: #000000;
     --soft-border: #686868;
 
-    --section-color: #31444e;
+    --section-color: #283d55;
     
     --text-inverse: #000;
     --text-regular: #fffefe;
@@ -392,7 +392,7 @@ ul {
     justify-content: center;
     gap: 4rem;
     margin: 7rem auto auto auto;
-    max-width: 1250px;
+    max-width: 1050px;
 }
 
 .profile_box {
