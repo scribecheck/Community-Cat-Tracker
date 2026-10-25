@@ -64,7 +64,7 @@
     --text-regular: #000;
     --text-light: #fffefe;
 
-    transition: .2s ease;
+    --transition: .2s ease;
 }
 
 .darkmode {
@@ -90,7 +90,7 @@
     --text-regular: #fffefe;
     --text-light: #fffefe;
 
-    transition: .2s ease;
+    --transition: .2s ease;
         }
 
 
